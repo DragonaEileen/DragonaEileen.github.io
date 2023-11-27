@@ -1,0 +1,31 @@
+*{
+	text-align: center;
+}
+nav{
+	position: fixed;
+	overflow: hidden;
+	background-color: papayawhip;
+	top: 0;
+	width: 100%;
+}
+nav a{
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav a:hover{
+	background: #ddd;
+	color: black;
+}
+.flex-container{
+	display: flex;
+	justify-content: space-evenly;
+}
+section{
+	width: 50%;
+}
+
+.marcas{
+	margin-top: 50px;
+}
