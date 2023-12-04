@@ -7,6 +7,7 @@ nav{
 	background-color: papayawhip;
 	top: 0;
 	width: 100%;
+	height: 50px;
 }
 nav a{
 	float: left;
@@ -22,10 +23,38 @@ nav a:hover{
 	display: flex;
 	justify-content: space-evenly;
 }
-section{
-	width: 50%;
-}
-
-.marcas{
+.row{
 	margin-top: 50px;
+}
+.column{
+	float: left;
+	width: 45%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+section{
+	border-style: dotted;
+	padding: 5%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  nav a{
+  	padding: 0px 0px;
+  	padding-top: 5px;
+  }
+}
+@keyframes funnyBorder {
+  0%   {border-style: dotted; border-color: lightcoral;}
+  25%  {border-style: dashed; border-color: papayawhip;}
+  50%  {border-style: dotted; border-color: aquamarine;}
+  100% {border-style: dashed; border-color: forestgreen;}
+}
+@keyframes example {
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
 }
